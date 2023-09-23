@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400&family=Macondo&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: 'Satisfy';
+}
+
+
+
+.mbfth {
+  animation: moveBackAndForth 5s linear infinite;
+}
+
+.rotating-wish {
+  transition: transform 0.3s;
+  transform-origin: center;
+  will-change: transform; 
+  transform: rotate(5deg);
+}
+
+.rotating-wish:hover {
+  transform: rotate(2deg); /* Rotate the element slightly */
+}
+
+
+@keyframes moveBackAndForth {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+.custom-cursor {
+  cursor:  url('/cursor.png'),  auto;
+}
+
+
+
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: green #ffd8d8;
+  }
+
+  *::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 246, 246);
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
