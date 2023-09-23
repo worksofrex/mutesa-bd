@@ -26,7 +26,9 @@ function App() {
 
   return (
 
-    <div className='w-screen h-screen text-center bg-black  relative overflow-y-scroll  custom-cursor' style={{ background: `url(/bg.svg)` }}>
+    <div className='w-screen h-screen text-center bg-black  text-white relative overflow-y-scroll  custom-cursor'
+    //  style={{ background: `url(/bg.svg)` }}
+     >
       <Confetti width={width} height={height} />
 
       <motion.div
@@ -71,7 +73,8 @@ function App() {
         />
       </p>
 
-      <div className='w-[20vw] h-[20vh] bg-blue-200 absolute right-40 blur-3xl' />
+      <div className='w-[20vw] h-[40vh] bg-red-500/10 absolute left-40 top-0 blur-3xl' />
+      <div className='w-[20vw] h-[20vh] bg-blue-200/20 absolute right-40 blur-3xl' />
       <div className='w-[20vw] h-[20vh] bg-green-200 absolute bottom-10 left-40 blur-[200px]' />
       <img src="/ballons.png" alt="" className='w-36 fixed bottom-0 left-0 mbfth' />
       <img src="/skate.png" alt="" className='w-36 fixed top-16 right-16 mbfth' />
