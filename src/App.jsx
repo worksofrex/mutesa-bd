@@ -1,9 +1,9 @@
 import Typewriter from 'typewriter-effect'
 import Confetti from 'react-confetti'
 import { motion } from "framer-motion"
-import Wishes from "../wishes.json"
-import Wish from './Wish';
 import useWindowSize from 'react-use/lib/useWindowSize'
+
+
 function App() {
   const { width , height } =  useWindowSize()
   document.addEventListener('mousemove', (e) => {
@@ -57,22 +57,13 @@ function App() {
         />
       </p>
 
-
-      <div className='mt-20  grid md:grid-cols-2 lg:grid-cols-3 msm:grid-cols-1 px-40 '>
-        {
-          Wishes.map((wish, index) => (
-            <Wish wish={wish.wish} name={wish.name} key={index} />
-          ))
-
-        }
-      </div>
       <div className='w-[20vw] h-[20vh] bg-blue-200 absolute right-40 blur-3xl' />
       <div className='w-[20vw] h-[20vh] bg-green-200 absolute bottom-10 left-40 blur-[200px]' />
       <img src="/ballons.png" alt="" className='w-36 fixed bottom-0 left-0 mbfth' />
       <img src="/skate.png" alt="" className='w-36 fixed top-16 right-16 mbfth' />
       <img src="/bouquet.webp" alt="" className='w-64 fixed bottom-0 right-10 mbfth ' />
 
-      <p>@MTX - 2023</p>
+      <p className='fixed w-full text-center bottom-0'>@MTX - 2023</p>
     </div>
     
   )
