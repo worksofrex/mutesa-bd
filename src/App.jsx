@@ -46,29 +46,50 @@ function App() {
       <p className='text-2xl px-[20vw]'>
         <Typewriter options={{ delay : 20}}
           onInit={(typewriter) => {
-            typewriter.typeString('Happy Birthday! 🎂')
-              .typeString("<br/>")
-              .pauseFor(2500)
-              .typeString('On this joyous day, I want to take a moment to celebrate you, the incredible person you are. 🌟')
-              .typeString("<br/>")
-              .typeString('May your day be filled with laughter, love, and unforgettable moments. May the coming year bring you endless opportunities, happiness, and success. 🌈')
-              .pauseFor(2500)
-              .typeString('May your heart be light, your smile be bright, and your spirit forever free. 🥳')
-              .pauseFor(2500)
-              .typeString("<br/>")
-              .typeString("<br/>")
-              .typeString('More dough 🤑, More blessings on your hustle 👧,  --@regis ')
-              .typeString("<br/>")
-              .typeString('HDB big DAWG..., More dollars, more h**s,MUTESA Shiesty😂   --@big_dush ')
-              .typeString("<br/>")
-              .typeString('Happy +1 Fav🥰 i appreciate and gotchuuu 4L🫂 --@hyguette ')
-              .typeString("<br/>")
-              .typeString('🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉')
-              .pauseFor(5000)
-              .callFunction(() => {
-
-              })
-              .start()
+            typewriter
+                .typeString("Happy Birthday! 🎂")
+                .typeString("<br/>")
+                .pauseFor(2500)
+                .typeString(
+                    "On this joyous day, I want to take a moment to celebrate you, the incredible person you are. 🌟"
+                )
+                .typeString("<br/>")
+                .typeString(
+                    "May your day be filled with laughter, love, and unforgettable moments. May the coming year bring you endless opportunities, happiness, and success. 🌈"
+                )
+                .pauseFor(2500)
+                .typeString(
+                    "May your heart be light, your smile be bright, and your spirit forever free. 🥳"
+                )
+                .pauseFor(2500)
+                .typeString("<br/>")
+                .typeString("<br/>")
+                .typeString(
+                    "More dough 🤑, More blessings on your hustle 👧,  --@regis "
+                )
+                .typeString("<br/>")
+                .typeString(
+                    "HDB big DAWG..., More dollars, more h**s,MUTESA Shiesty😂   --@big_dush "
+                )
+                .typeString("<br/>")
+                .typeString(
+                    "Happy +1 Fav🥰 i appreciate and gotchuuu 4L🫂 --@hyguette "
+                )
+                .typeString("<br/>")
+                .typeString("🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉")
+                .pauseFor(2500)
+                .typeString("<br/>")
+                .typeString(
+                    "Happy birthday to an important person ,a friend and an idol🥳🥳🥳"
+                )
+                .typeString("<br/>")
+                .typeString(
+                    "Please  enjoy this day to the fullest and keep sharing happy memories with us"
+                )
+                .typeString("<br/>")
+                .typeString("🤗🤗🤗  --@louange")
+                .callFunction(() => {})
+                .start();
           }}
         />
       </p>
