@@ -58,6 +58,10 @@ function App() {
               .typeString('More dough 🤑, More blessings on your hustle 👧,  --@regis ')
               .typeString("<br/>")
               .typeString('HDB big DAWG..., More dollars, more h**s,MUTESA Shiesty😂   --@big_dush ')
+              .typeString("<br/>")
+              .typeString('Happy +1 Fav🥰 i appreciate and gotchuuu 4L🫂 --@hyguette ')
+              .typeString("<br/>")
+              .typeString('🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉')
               .pauseFor(5000)
               .callFunction(() => {
 
