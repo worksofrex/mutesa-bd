@@ -10,7 +10,7 @@ const Wish = ({ name, wish }) => {
     return (
         <div className={`p-4 rounded-md ${getRandomColor()} border-4 border-white rotating-wish`}   >
             <p className='text-xl font-sans'>
-                <P text={wish} />
+                {wish}
             </p>
             <p className='text-right font-["Inconsolata"] font-semibold'>-- {name}</p>
         </div>
