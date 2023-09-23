@@ -5,7 +5,7 @@ import useWindowSize from 'react-use/lib/useWindowSize'
 
 
 function App() {
-  const { width , height } =  useWindowSize()
+  const { width, height } = useWindowSize()
   document.addEventListener('mousemove', (e) => {
     const rotatingWishes = document.querySelectorAll('.rotating-wish');
 
@@ -18,22 +18,22 @@ function App() {
       const deltaY = e.clientY - centerY;
 
       const angle = Math.atan2(deltaY, deltaX);
-      const rotation = angle * (180 / Math.PI); 
+      const rotation = angle * (180 / Math.PI);
     });
 
   });
 
 
   return (
-    
-    <div className='w-screen h-screen text-center  relative overflow-y-scroll  custom-cursor' style={{ background: `url(/bg.svg)` }}>
-      <Confetti width={width} height={height}/>
-  
+
+    <div className='w-screen h-screen text-center bg-black  relative overflow-y-scroll  custom-cursor' style={{ background: `url(/bg.svg)` }}>
+      <Confetti width={width} height={height} />
+
       <motion.div
-        initial={{ opacity: 0, y: -50 }}
+        initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 3, y: 0 }}
         exit={{ opacity: 0, y: -50 }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 1 }}
       >
         <div className='p-20'>
           <img src="/mutinho.png" alt="" className='w-40 mx-auto mb-6 mbfth' />
@@ -41,18 +41,28 @@ function App() {
           <h1 className='text-6xl font-bold font-["Macondo"] ' >It's Mutesa's bd 🎉🎉</h1>
         </div>
       </motion.div>
-      <p className='text-2xl'>
-        <Typewriter
+      <p className='text-2xl px-[20vw]'>
+        <Typewriter options={{ delay : 20}}
           onInit={(typewriter) => {
-            typewriter.typeString('Hey Mutesa!')
+            typewriter.typeString('Happy Birthday! 🎂')
+              .typeString("<br/>")
               .pauseFor(2500)
-              .typeString(' Today is your birthday')
-              .typeString(' Today is your birthday')
+              .typeString('On this joyous day, I want to take a moment to celebrate you, the incredible person you are. 🌟')
+              .typeString("<br/>")
+              .typeString('May your day be filled with laughter, love, and unforgettable moments. May the coming year bring you endless opportunities, happiness, and success. 🌈')
               .pauseFor(2500)
+              .typeString('May your heart be light, your smile be bright, and your spirit forever free. 🥳')
+              .pauseFor(2500)
+              .typeString("<br/>")
+              .typeString("<br/>")
+              .typeString('More dough 🤑, More blessings on your hustle 👧,  --@regis ')
+              .typeString("<br/>")
+              .typeString('HDB big DAWG..., More dollars, more h**s,MUTESA Shiesty😂   --@big_dush ')
+              .pauseFor(5000)
               .callFunction(() => {
-                console.log('I wish you a great day and a great year ahead');
+
               })
-              .start();
+              .start()
           }}
         />
       </p>
@@ -65,7 +75,7 @@ function App() {
 
       <p className='fixed w-full text-center bottom-0'>@MTX - 2023</p>
     </div>
-    
+
   )
 }
 
